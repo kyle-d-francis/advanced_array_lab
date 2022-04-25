@@ -164,10 +164,29 @@ console.log('Mexican Foods: ', mexicanFood)
 //console.log('Italian food:' , results)
 //3. Create a function that will return only dishes whose serving id number matches their serving count.
 //Filter
-function servingProblem(){
+//function servingProblem(){
+
+    //let results = dishes.filter(function(el){
+        //if(el.id === el.servings){
+            //return true;
+        //}
+       // else{
+            //return false;
+        //}});
+      
+
+
+   // return results;
+//} 
+//let results = servingProblem();
+//console.log('servings:' , results)
+
+//4. Create a function that will return only dishes whose serving count is even.
+//Filter
+function evenProblem(){
 
     let results = dishes.filter(function(el){
-        if(el.id === el.servings){
+        if(el.servings % 2 == 0){
             return true;
         }
         else{
@@ -178,15 +197,29 @@ function servingProblem(){
 
     return results;
 } 
-let results = servingProblem();
-console.log('servings:' , results)
-
-//4. Create a function that will return only dishes whose serving count is even.
-//Filter
+let results = evenProblem();
+console.log('Even Servings:' , results)
 
 //5. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+function evenProblem(){
+
+    let results = dishes.filter(function(el){
+        if(el.servings % 2 == 0){
+            return true;
+        }
+        else{
+            return false;
+        }});
+      
+
+
+    return results;
+} 
+let results = evenProblem();
+console.log('Even Servings:' , results)
+
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
