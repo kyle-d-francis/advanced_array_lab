@@ -203,32 +203,33 @@ console.log('Mexican Foods: ', mexicanFood)
 //5. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
-function ChickpeaProblem(){
+//function ChickpeaProblem(){
 
-    let results = dishes.filter(function(el){
-        if(el.ingredients.includes( 'chickpea')){
-            return true;
-        }
-        else{
-            return false;
-        }});
+    //let results = dishes.filter(function(el){
+       // if(el.ingredients.includes( 'chickpea')){
+            //return true;
+        //}
+       // else{
+           //return false;
+        //}});
       
 
 
-    return results;
-} 
-let results = ChickpeaProblem();
-console.log('Chickpea Ingredients:' , results)
+    //return results;
+//} 
+//let results = ChickpeaProblem();
+//console.log('Chickpea Ingredients:' , results)
 
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
-//function cuisineType(){
-
-    //let results = dishes.map(function(el)){
-
-   // }
-//}
+function cuisineType(){
+    let results = dishes.map(function(el){
+        return el.cuisine
+    })
+    return results
+}
+    console.log(cuisineType())
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
