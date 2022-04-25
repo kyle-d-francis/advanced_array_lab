@@ -102,23 +102,23 @@ let dishes = [
 ]
 
 //Example function
-function findMexicanFood(){
-    //Debug tip: Add a console.log(el) inside the filter function to get a visualization of what el represents and see all its properties
-    let results = dishes.filter(function(el){
-        if(el.cuisine === "Mexican"){
-            return true;
-        }
-        else{
-            return false;
-        }})
+// function findMexicanFood(){
+//     //Debug tip: Add a console.log(el) inside the filter function to get a visualization of what el represents and see all its properties
+//     let results = dishes.filter(function(el){
+//         if(el.cuisine === "Mexican"){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }})
 
-    //Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
+//     //Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
 
-    return results;
-}
+//     return results;
+// }
 
-let mexicanFood = findMexicanFood();
-console.log('Mexican Foods: ', mexicanFood)
+// let mexicanFood = findMexicanFood();
+// console.log('Mexican Foods: ', mexicanFood)
 
 
 
@@ -252,26 +252,26 @@ console.log('Mexican Foods: ', mexicanFood)
 //     })
 //     return results
 // }
-function doRoutine(){
-    let results = dishes.filter(function(el){
-        if (el.cuisine === 'Vegetarian'){
-           let results = dishes.map(function(el){
-                return el.cuisine + el.name
-                }
-                )
-                return results
+// function doRoutine(){
+//     let results = dishes.filter(function(el){
+//         if (el.cuisine === 'Vegetarian'){
+//            let results = dishes.map(function(el){
+//                 return el.cuisine + el.name
+//                 }
+//                 )
+//                 return results
     
-        }
-        else{
-           return false 
-        }
+//         }
+//         else{
+//            return false 
+//         }
 
-    })
+//     })
 
-    return results 
-}
+//     return results 
+// }
 
-console.log(doRoutine())
+// console.log(doRoutine())
 
 
 // doRoutine(cuisineType)
@@ -282,7 +282,22 @@ console.log(doRoutine())
 //5. Create a function that will return dishes whose ingredients array INCLUDES "tomato" OR "cheese".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+// function tomatoProblem(){
 
+//     let results = dishes.filter(function(el){
+//        if(el.ingredients.includes('tomato'|| 'cheese')){
+//             return true;
+//         }
+//        else{
+//            return false;
+//         }});
+      
+
+
+//     return results;
+// } 
+// let results = tomatoProblem();
+// console.log('Tomato or Cheese Ingredients:' , results)
 //10. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
 
