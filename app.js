@@ -126,10 +126,30 @@ console.log('Mexican Foods: ', mexicanFood)
 //1. Create a function that will return all dishes with the cuisine type of "vegetarian"
 //Filter
 
-function problemOne(){
+//function problemOne(){
+
+    //let results = dishes.filter(function(el){
+        //if(el.cuisine === 'Vegetarian'){
+            //return true;
+        //}
+        //else{
+            //return false;
+        //}});
+      
+
+
+    //return results;
+//} 
+//let results = problemOne();
+//console.log('vegetarian food:' , results)
+
+
+//2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
+//Filter
+function italianProblem(){
 
     let results = dishes.filter(function(el){
-        if(el.cuisine === 'Vegetarian'){
+        if((el.cuisine === 'Italian') &&(el.servings > 5)){
             return true;
         }
         else{
@@ -140,13 +160,8 @@ function problemOne(){
 
     return results;
 } 
-let results = problemOne();
-console.log('vegetarian food:' , results)
-
-
-//2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
-//Filter
-
+let results = italianProblem();
+console.log('Italian food:' , results)
 //3. Create a function that will return only dishes whose serving id number matches their serving count.
 //Filter
 
