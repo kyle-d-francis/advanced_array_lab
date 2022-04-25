@@ -128,11 +128,21 @@ console.log('Mexican Foods: ', mexicanFood)
 
 function problemOne(){
 
-    let results = findVegetarian();
+    let results = dishes.filter(function(el){
+        if(el.cuisine === 'Vegetarian'){
+            return true;
+        }
+        else{
+            return false;
+        }});
+      
 
 
     return results;
-}
+} 
+let results = problemOne();
+console.log('vegetarian food:' , results)
+
 
 //2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
